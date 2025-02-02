@@ -1,0 +1,499 @@
+/* تنظیمات کلی */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* ارتفاع کل صفحه */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+}
+
+
+/* بخش اصلی */
+main {
+    flex: 1; /* بخش اصلی فضای باقی‌مانده را پر می‌کند */
+    width: 100%;
+    padding-bottom: 80px; /* فضای خالی معادل ارتفاع فوتر */
+}
+
+/* هدر */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav ul li a:hover {
+    color: #ddd;
+}
+
+/* بخش‌ها */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* بخش About Me */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* بخش Projects */
+/* والد کارت‌ها */
+.projects-container {
+    display: flex; /* فعال کردن Flexbox */
+    flex-wrap: wrap; /* اطمینان از رفتن کارت‌ها به خط بعدی در صورت کمبود فضا */
+    justify-content: center; /* مرکزچینی کارت‌ها */
+    gap: 20px; /* فاصله بین کارت‌ها */
+    padding: 20px; /* فاصله داخلی */
+}
+
+/* کارت پروژه */
+/* کانتینر پروژه‌ها */
+.projects-container {
+    display: grid; /* فعال‌کردن Grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* ستون‌های خودکار با عرض حداقل 250px */
+    gap: 20px; /* فاصله بین کارت‌ها */
+    padding: 20px; /* فاصله داخلی کانتینر */
+    justify-content: center; /* مرکزچینی کارت‌ها */
+}
+
+/* کارت پروژه */
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem; /* افزایش اندازه عنوان */
+    color: #333; /* رنگ عنوان */
+}
+
+.project-card p {
+    margin: 10px 0;
+    color: #666; /* رنگ متن توضیحات */
+    line-height: 1.6; /* فاصله خطوط */
+}
+
+.project-card a {
+    display: inline-block; /* لینک به صورت بلوک دربیاید */
+    margin-top: 10px; /* فاصله از متن توضیحات */
+    color: #007bff; /* رنگ لینک */
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* خط زیرین شفاف اولیه */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease; /* انیمیشن تغییر رنگ */
+}
+
+.project-card a:hover {
+    color: #0056b3; /* تغییر رنگ لینک هنگام هاور */
+    border-bottom-color: #0056b3; /* نمایش خط زیرین */
+}
+
+/* دکمه‌های تماس */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-buttons .btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.contact-buttons .btn i {
+    margin-right: 10px;
+}
+
+.btn.telegram {
+    background-color: #0088cc;
+}
+
+.btn.whatsapp {
+    background-color: #25D366;
+}
+
+.btn.email {
+    background-color: #ea4335;
+}
+
+/* فوتر */
+footer {
+    background-color: #333; /* رنگ پس‌زمینه */
+    color: white; /* رنگ متن */
+    text-align: center; /* مرکزچینی متن */
+    padding: 20px 10px; /* فاصله داخلی */
+    display: flex; /* برای فلکس‌باکس */
+    justify-content: center; /* مرکزچینی افقی */
+    align-items: center; /* مرکزچینی عمودی */
+    flex-direction: column; /* محتوا به صورت عمودی مرتب شود */
+    gap: 10px; /* فاصله بین عناصر */
+    width: 100%; /* عرض فوتر 100 درصد */
+    position: fixed; /* ثابت‌سازی فوتر در پایین صفحه */
+    bottom: 0; /* قرارگیری در پایین صفحه */
+    left: 0; /* چسباندن به سمت چپ */
+    z-index: 10; /* لایه بالاتر برای اطمینان از نمایش */
+    height: 40px; /* ارتفاع ثابت */
+}
+
+/* استایل بخش تماس */
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* فاصله بین آیکون‌ها */
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* فاصله بین آیکون و متن */
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #007bff; /* تغییر رنگ در هنگام هاور */
+}
+
+.contact-link svg {
+    fill: currentColor; /* هماهنگی رنگ آیکون با لینک */
+    width: 24px;
+    height: 24px;
+}
+
+/* استایل برای بخش "About Me - Details" */
+.about-details-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* فاصله بین تصویر و متن */
+    justify-content: center; /* مرکزچینی محتوا */
+    margin-top: 20px;
+}
+
+/* تنظیم سایز تصویر پروفایل */
+.profile-pic {
+    width: 180px; /* عرض تصویر پروفایل */
+    height: 180px; /* ارتفاع تصویر پروفایل */
+    border-radius: 50%; /* دایره‌ای کردن تصویر */
+    object-fit: cover; /* اطمینان از پر شدن کامل فضا */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه اطراف تصویر */
+}
+
+/* تنظیمات برای متن بخش "About Me" */
+.about-text {
+    max-width: 700px; /* عرض محدود برای متن */
+    text-align: left;
+}
+
+/* بخش اصلی */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* بخش توضیحات پروژه */
+.project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 400px;
+}
+
+.project-description h2 {
+    font-size: 2rem;
+    color: #080606;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    max-width: 900px;
+    line-height: 1.8;
+    text-align: left;
+    color: #080606;
+}
+
+/* لیست ویژگی‌ها */
+.project-description ul {
+    /* text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px; */
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-description ul li {
+    margin: 8px 0;
+    /* margin-bottom: 10px; */
+}
+
+/* تکنولوژی‌های مورد استفاده */
+.project-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-tech ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-tech li {
+    margin: 8px 0;
+}
+
+/* اهداف پروژه */
+.project-objectives {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-objectives ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-objectives li {
+    margin: 8px 0;
+}
+
+/* دکمه بازگشت */
+.back-button {
+    display: block; /* تبدیل به block برای اعمال margin auto */
+    width: fit-content; /* عرض دکمه به اندازه محتوای آن */
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px auto; /* وسط‌چینی با margin خودکار */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* تنظیمات رسپانسیو برای نمایشگرهای کوچک‌تر از 768px (موبایل) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* کاهش سایز عنوان */
+    }
+
+    .header nav ul li {
+        margin: 0 10px;
+    }
+
+    .about-details-container {
+        flex-direction: column; /* ستون‌بندی برای محتوا */
+        align-items: center;
+        gap: 20px; /* فاصله بین عناصر */
+    }
+
+    .profile-pic {
+        width: 120px; /* کاهش اندازه تصویر پروفایل */
+        height: 120px;
+    }
+
+    .about-text {
+        text-align: center; /* مرکزچینی متن */
+        max-width: 100%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* عرض حداقل 200px */
+    }
+
+    .project-card {
+        padding: 15px; /* کاهش فاصله داخلی */
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem; /* کاهش سایز عنوان */
+    }
+
+    .project-card p {
+        font-size: 0.9rem; /* کاهش سایز متن */
+    }
+
+    footer {
+        padding: 10px; /* کاهش فاصله داخلی */
+        font-size: 0.9rem; /* کاهش سایز متن */
+    }
+}
+
+/* تنظیمات رسپانسیو برای نمایشگرهای کوچک‌تر از 576px (گوشی‌های بسیار کوچک) */
+@media (max-width: 576px) {
+    .header nav ul {
+        display: flex; /* تغییر به فلکس‌باکس */
+        flex-direction: column; /* ستون‌بندی آیتم‌ها */
+        align-items: center; /* مرکزچینی آیتم‌ها */
+        gap: 10px; /* فاصله بین آیتم‌ها */
+    }
+
+    .about-details-container {
+        padding: 20px; /* فاصله بیشتر برای ظاهر بهتر */
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* یک ستون */
+    }
+
+    .project-card {
+        padding: 10px; /* کاهش فاصله داخلی */
+    }
+
+    .contact-buttons {
+        flex-direction: column; /* چینش عمودی دکمه‌ها */
+        gap: 10px; /* فاصله بین دکمه‌ها */
+    }
+
+    .back-button {
+        width: 100%; /* عرض کامل دکمه بازگشت */
+        margin: 10px 0; /* فاصله بالا و پایین */
+    }
+}
+
+/* تنظیمات رسپانسیو برای نمایشگرهای بزرگ‌تر از 1200px (دسکتاپ‌های بزرگ) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px; /* افزایش عرض کانتینر */
+    }
+
+    .about-text {
+        text-align: left; /* بازگشت به متن چپ‌چین */
+    }
+
+    .projects-container {
+        gap: 30px; /* افزایش فاصله بین کارت‌ها */
+    }
+
+    .project-card {
+        padding: 25px; /* افزایش فاصله داخلی کارت‌ها */
+    }
+}
