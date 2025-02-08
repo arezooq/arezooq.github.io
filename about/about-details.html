@@ -8,9 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center py-8">
+    <header class="bg-gray-800 text-white w-full py-5 text-center  mb-12">
+        <h1 class="text-2xl">About Me - Details</h1>
+        <nav>
+            <ul class="flex justify-center text-white space-x-6 mt-3">
+                <li><a href="../index.html" class="hover:text-indigo-400">Home</a></li>
+                <li><a href="../projects/project-details.html" class="hover:text-indigo-400">Projects</a></li>
+                <li><a href="../resume/resume.html" class="hover:text-indigo-400">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section id="about-details" class="w-full max-w-4xl px-6">
-        <h2 class="text-4xl font-bold text-center text-purple-400 mb-8">About Me - Details</h2>
         <div class="flex flex-col md:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg">
             <img src="../images/profile.jpg" alt="My Profile Picture" class="w-40 h-40 rounded-full mb-6 md:mb-0 md:mr-6">
             <div class="text-lg leading-relaxed">
@@ -78,7 +87,7 @@
         </div>
     </section>
     
-    <footer class="w-full bg-gray-800 text-white text-center flex flex-col items-center justify-center gap-1 py-3 mb-0">
+    <footer class="w-full bg-gray-800 text-white text-center flex flex-col items-center justify-center gap-4 py-5">
         <p>Designed and Developed by 
             <span class="text-purple-400">
                 <a href="https://github.com/arezooq/arezooq.github.io/" target="_blank" class="hover:underline">
@@ -86,7 +95,25 @@
                 </a>
             </span>
         </p>
-        <p>Copyright © 2025</p>
+        
+        <!-- Social Icons -->
+        <div class="flex justify-center space-x-6">
+            <a href="https://github.com/arezooq" target="_blank" rel="noopener noreferrer" 
+                class="text-purple-400 text-2xl hover:text-purple-500 transition transform hover:scale-110">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arezoo-ghorbanzade" target="_blank" 
+                class="text-purple-400 text-2xl hover:text-purple-500 transition transform hover:scale-110">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://t.me/arezoo_ghorbanzade" target="_blank" 
+                class="text-purple-400 text-2xl hover:text-purple-500 transition transform hover:scale-110">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+    
+        <p class="text-sm">Copyright © 2025</p>
     </footer>
+    
 </body>
 </html>
