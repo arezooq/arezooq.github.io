@@ -28,15 +28,24 @@
                 <h2 class="text-3xl font-semibold mb-4">My Resume</h2>
                 <p class="text-lg mb-4">You can view my resume below or download it as a PDF:</p>
                 
-                <!-- PDF Preview -->
+                <!-- PDF Preview with object tag -->
                 <div class="w-full max-w-4xl mx-auto mb-6">
-                    <iframe src="../images/Arezoo_Ghorbanzade_resume.pdf" class="w-full h-[500px] border-2 border-gray-400 rounded-lg"></iframe>
+                    <object data="../images/Arezoo_Ghorbanzade_resume.pdf" type="application/pdf" class="w-full h-[500px] md:h-[700px] border-2 border-gray-400 rounded-lg">
+                        <p class="text-white mt-4">Your browser does not support PDF preview. 
+                            <a href="../images/Arezoo_Ghorbanzade_resume.pdf" target="_blank" class="text-purple-400 underline">Click here to view the PDF</a>.
+                        </p>
+                    </object>
                 </div>
 
-                <!-- Download Resume -->
-                <a href="../images/Arezoo_Ghorbanzade_resume.pdf" download class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg text-xl hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
-                    Download Resume
-                </a>
+                <!-- Download and Open in New Tab -->
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="../images/Arezoo_Ghorbanzade_resume.pdf" download class="bg-purple-600 text-white px-8 py-4 rounded-lg text-xl hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+                        Download Resume
+                    </a>
+                    <a href="../images/Arezoo_Ghorbanzade_resume.pdf" target="_blank" class="bg-purple-600 text-white px-8 py-4 rounded-lg text-xl hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+                        View in New Tab
+                    </a>
+                </div>
             </section>
 
             <!-- Back to Home -->
