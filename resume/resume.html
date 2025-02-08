@@ -6,25 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header class="header">
-        <h1>My Resume</h1>
+<body class="bg-gray-900 flex flex-col items-center min-h-screen overflow-x-hidden bg-cover bg-center bg-no-repeat">
+    <!-- Header -->
+    <header class="w-full py-5 text-center relative">
+        <div class="absolute inset-0 bg-black opacity-40"></div> <!-- Overlay for better text visibility -->
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl font-extrabold text-white">My Resume</h1>
+            <p class="mt-3 text-lg md:text-2xl text-white">A brief overview of my career and accomplishments</p>
+        </div>
     </header>
 
-    <main>
-        <section id="resume" class="section">
-            <h2>Download My Resume</h2>
-            <p>You can download my resume in PDF format by clicking the link below:</p>
-            <a href="../images/Arezoo_Ghorbanzade_resume.pdf" download class="download-link">Download Resume</a>
-            <a href="../index.html" class="back-button">Back to Home</a>
-        </section>
+    <main class="py-10 w-full flex items-center justify-center">
+        <div class="container mx-auto px-4">
+
+            <!-- Resume Section -->
+            <section id="resume" class="bg-gray-600 py-16 text-center text-white mx-auto px-4 max-w-6xl shadow-lg rounded-lg mt-10">
+                <h2 class="text-3xl font-semibold mb-4">My Resume</h2>
+                <p class="text-lg mb-4">You can view my resume below or download it as a PDF:</p>
+                
+                <!-- PDF Preview -->
+                <div class="w-full max-w-4xl mx-auto mb-6">
+                    <iframe src="../images/Arezoo_Ghorbanzade_resume.pdf" class="w-full h-[500px] border-2 border-gray-400 rounded-lg"></iframe>
+                </div>
+
+                <!-- Download Resume -->
+                <a href="../images/Arezoo_Ghorbanzade_resume.pdf" download class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg text-xl hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+                    Download Resume
+                </a>
+            </section>
+
+            <!-- Back to Home -->
+            <section class="text-center mt-10">
+                <a href="../index.html" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg text-xl hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+                    Back to Portfolio
+                </a>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>Made with 💻 by <a href="https://github.com/arezooq/arezooq.github.io/">Arezoo Ghorbanzade</a></p>
+    <!-- Footer -->
+    <footer class="w-full bg-gray-800 text-white text-center flex flex-col items-center justify-center gap-1 py-3">
+        <p>Designed and Developed by 
+            <span class="text-purple-400">
+                <a href="https://github.com/arezooq/arezooq.github.io/" target="_blank" class="hover:underline">
+                    Arezoo Ghorbanzade
+                </a>
+            </span>
+        </p>
+        <p>Copyright © 2025</p>
     </footer>
 </body>
 

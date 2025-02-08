@@ -4,28 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Details</title>
-    <link rel="stylesheet" href="../style.css"> <!-- اضافه کردن فایل CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-        <h1>About Me - Details</h1>
-    </header>
-    <section id="about-details" class="section about-details-section">
-        <h2>About Me - Details</h2>
-        <div class="about-details-container">
-            <img src="../images/profile.jpg" alt="My Profile Picture" class="profile-pic">
-            <div class="about-text">
-                <p>With a strong background in Go and Node.js, I specialize in building high-performance backends and scalable microservices & hexagonal architectures. My expertise in Go has allowed me to develop robust, efficient solutions, while my experience with Node.js helps me create fast and flexible APIs. Whether it’s handling heavy loads or ensuring system reliability, I am committed to crafting optimized, maintainable software.</p>
-                <p>Python is another language I excel in, particularly in the realm of machine learning and data analysis. I am currently focused on developing advanced intrusion detection systems that utilize Python’s rich ecosystem of libraries like Scikit-learn, NumPy, and Pandas. Through this, I combine my passion for AI and cybersecurity to create innovative solutions for real-world challenges.</p>
-                <p>My technical experience extends beyond programming. I have in-depth knowledge of networking, including certifications such as CCNA and CCNP, and I am proficient with Microsoft systems and Mikrotik routers. This broad expertise in network management allows me to approach challenges from a holistic perspective, ensuring smooth integration between the software and network infrastructure.</p>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center py-8">
+
+    <section id="about-details" class="w-full max-w-4xl px-6">
+        <h2 class="text-4xl font-bold text-center text-purple-400 mb-8">About Me - Details</h2>
+        <div class="flex flex-col md:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg">
+            <img src="../images/profile.jpg" alt="My Profile Picture" class="w-40 h-40 rounded-full mb-6 md:mb-0 md:mr-6">
+            <div class="text-lg leading-relaxed">
+                <p class="mb-4">With a strong background in Go and Node.js, I specialize in building high-performance backends and scalable microservices & hexagonal architectures. My expertise in Go has allowed me to develop robust, efficient solutions, while my experience with Node.js helps me create fast and flexible APIs. Whether it’s handling heavy loads or ensuring system reliability, I am committed to crafting optimized, maintainable software.</p>
+                <p class="mb-4">Python is another language I excel in, particularly in the realm of machine learning and data analysis. I am currently focused on developing advanced intrusion detection systems that utilize Python’s rich ecosystem of libraries like Scikit-learn, NumPy, and Pandas. Through this, I combine my passion for AI and cybersecurity to create innovative solutions for real-world challenges.</p>
+                <p class="mb-4">My technical experience extends beyond programming. I have in-depth knowledge of networking, including certifications such as CCNA and CCNP, and I am proficient with Microsoft systems and Mikrotik routers. This broad expertise in network management allows me to approach challenges from a holistic perspective, ensuring smooth integration between the software and network infrastructure.</p>
                 <p>I am always looking for ways to improve my skillset and contribute to forward-thinking projects that push the boundaries of technology. I enjoy tackling complex problems and am constantly evolving my abilities to stay at the forefront of the industry.</p>
             </div>
         </div>
-        <a href="../index.html" class="back-button">Back to Home</a>
     </section>
 
-    <footer>
-        <p>Made with 💻 by <a href="https://github.com/arezooq/arezooq.github.io/">Arezoo Ghorbanzade</a></p>
+    <section class="w-full max-w-4xl px-6 mt-16">
+        <h2 class="text-3xl font-bold text-center text-purple-400 mb-8">Professional <span class="text-white">Skillset</span></h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="Golang Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://nestjs.com/img/logo-small.svg" alt="NestJS Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Python Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" alt="Docker Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original-wordmark.svg" alt="Redis Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" alt="RabbitMQ Logo" width="48">
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg" alt="Network Logo" width="48">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full max-w-4xl px-6 mt-16">
+        <div class="text-center mb-12">
+            <a href="../index.html" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg text-xl hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+                Back to Portfolio
+            </a>
+        </div>
+    </section>
+    
+    <footer class="w-full bg-gray-800 text-white text-center flex flex-col items-center justify-center gap-1 py-3 mb-0">
+        <p>Designed and Developed by 
+            <span class="text-purple-400">
+                <a href="https://github.com/arezooq/arezooq.github.io/" target="_blank" class="hover:underline">
+                    Arezoo Ghorbanzade
+                </a>
+            </span>
+        </p>
+        <p>Copyright © 2025</p>
     </footer>
 </body>
 </html>

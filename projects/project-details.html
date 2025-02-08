@@ -4,55 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details - Intrusion Detection System</title>
-    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <h1>Intrusion Detection System</h1>
-            <p>A Python-based system for detecting cyberattacks with ML integration</p>
+<body class="flex flex-col items-center min-h-screen bg-gray-900 overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-purple-600 bg-gray-800 text-white w-full py-5 text-center relative" style="background-image: url('../images/cybersecurity-network.jpg'); background-size: cover; background-position: center center; filter: grayscale(0%) blur(0px);">
+        <div class="absolute inset-0 bg-black opacity-40"></div> <!-- Slight overlay for text visibility -->
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl font-extrabold leading-tight">Intrusion Detection System</h1>
+            <p class="mt-3 text-lg md:text-2xl">A Python-based system for detecting cyberattacks with integrated Machine Learning</p>
         </div>
     </header>
-    <main class="container">
-        <section class="project-description">
-            <img src="../images/cybersecurity-network.jpg" alt="Intrusion Detection System Screenshot" class="project-image">
-            <h2>About the Project</h2>
-            <p>
-                The Intrusion Detection System is a cybersecurity tool designed to identify and analyze 
-                network intrusions in real-time. By integrating machine learning algorithms, this system 
-                provides accurate and efficient detection of various types of cyberattacks.
-            </p>
-            <p><strong>This project includes the following key features:</strong></p>
-            <ul>
-                <li>Real-time monitoring of network traffic</li>
-                <li>Custom datasets for training the ML model</li>
-                <li>Optimized algorithms for low hardware requirements</li>
-                <li>Detailed reports in multiple formats (e.g., PCAP and JSON)</li>
-                <li>Simulated cyberattacks for testing purposes</li>
+    
+    
+
+    <!-- Main Content Section -->
+    <main class="flex-1 px-4 py-12 container mx-auto">
+        <!-- About the Project -->
+        <section class="bg-gray-600 py-16 text-center mx-auto px-4 max-w-6xl shadow-lg rounded-lg mt-10">
+            <h2 class="text-3xl font-semibold text-white text-center mb-6">Key Features</h2>
+            <ul class="space-y-4 max-w-3xl text-white text-center mx-auto">
+                <li class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <span>Real-time monitoring of network traffic</span>
+                </li>
+                <li class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 12l5 5L20 7" />
+                    </svg>
+                    <span>Custom datasets for training the ML model</span>
+                </li>
+                <li class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <span>Optimized algorithms for low hardware requirements</span>
+                </li>
+                <li class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7H6v6h7v-6zM19 7h-7v6h7V7zM13 13h-7v6h7v-6zM19 13h-7v6h7v-6z" />
+                    </svg>
+                    <span>Detailed reports in multiple formats (e.g., PCAP, JSON)</span>
+                </li>
+                <li class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12l4.5 4.5M15 12l4.5-4.5M15 12l-4.5 4.5M15 12l-4.5-4.5" />
+                    </svg>
+                    <span>Simulated cyberattacks for comprehensive testing</span>
+                </li>
             </ul>
         </section>
-        <section class="project-tech">
-            <h2>Technologies Used</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python</li>
-                <li><strong>Frameworks:</strong> Scikit-learn, NumPy, Pandas</li>
-                <li><strong>Tools:</strong> Wireshark, VMware</li>
-                <li><strong>Database:</strong> MongoDB</li>
+        
+
+        <!-- Technologies Used -->
+        <section class="bg-gray-600 py-16 text-center text-white mx-auto px-4 max-w-6xl shadow-lg rounded-lg mt-10 mb-12">
+            <h2 class="text-3xl font-semibold mb-6">Technologies Used</h2>
+            <div class="flex flex-col space-y-6 max-w-3xl mx-auto">
+                <div class="flex items-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3" />
+                    </svg>
+                    <div>
+                        <p class="font-semibold">Programming Languages:</p>
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <div>
+                        <p class="font-semibold">Frameworks:</p>
+                        <p>Scikit-learn, NumPy, Pandas</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12l4.5 4.5M15 12l4.5-4.5M15 12l-4.5 4.5M15 12l-4.5-4.5" />
+                    </svg>
+                    <div>
+                        <p class="font-semibold">Tools:</p>
+                        <p>Wireshark, VMware</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3" />
+                    </svg>
+                    <div>
+                        <p class="font-semibold">Database:</p>
+                        <p>MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- Project Objectives -->
+        <section class="bg-gray-600 py-16 text-center text-white mx-auto px-4 max-w-6xl shadow-lg rounded-lg mt-10 mb-12">
+            <h2 class="text-3xl font-semibold mb-6">Project Objectives</h2>
+            <ul class="space-y-4 max-w-3xl mx-auto">
+                <li class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <span>Developing a lightweight and efficient intrusion detection system</span>
+                </li>
+                <li class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 12l5 5L20 7" />
+                    </svg>
+                    <span>Achieving minimal error rates in detecting various types of attacks</span>
+                </li>
+                <li class="flex items-start space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <span>Providing scalable, accurate, and cost-effective network security solutions</span>
+                </li>
             </ul>
         </section>
-        <section class="project-objectives">
-            <h2>Project Objectives</h2>
-            <p><strong>The main goals of this project include:</strong></p>
-            <ul>
-                <li>Developing a lightweight intrusion detection system</li>
-                <li>Achieving minimal error rates in detecting attacks</li>
-                <li>Providing scalable and efficient solutions for network security</li>
-            </ul>
-        </section>
-        <a href="../index.html" class="back-button">Back to Portfolio</a>
+        
+
+        <div class="text-center">
+            <a href="../index.html" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg text-xl hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+                Back to Portfolio
+            </a>
+        </div>
     </main>
-    <footer>
-        <p>Made with 💻 by <a href="https://github.com/arezooq/arezooq.github.io/">Arezoo Ghorbanzade</a></p>
+
+    <!-- Footer Section -->
+    <footer class="w-full bg-gray-800 text-white text-center flex flex-col items-center justify-center gap-1 py-3">
+        <p>Designed and Developed by 
+            <span class="text-purple-400">
+                <a href="https://github.com/arezooq/arezooq.github.io/" target="_blank" class="hover:underline">
+                    Arezoo Ghorbanzade
+                </a>
+            </span>
+        </p>
+        <p>Copyright © 2025</p>
     </footer>
+
 </body>
 </html>

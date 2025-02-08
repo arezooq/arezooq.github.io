@@ -6,67 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header class="header">
-        <h1>Welcome to My Portfolio</h1>
+<body class="flex flex-col items-center min-h-screen bg-gray-900 overflow-x-hidden">
+
+    <header class="bg-gray-800 text-white w-full py-5 text-center">
+        <h1 class="text-2xl">Welcome to My Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="resume/resume.html">Resume</a></li>
+            <ul class="flex justify-center space-x-6 mt-3">
+                <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+                <li><a href="#projects" class="hover:text-indigo-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+                <li><a href="resume/resume.html" class="hover:text-indigo-400">Resume</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about" class="section about-section">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="images/profile.jpg" alt="My Profile Picture" class="profile-pic">
-                <p>Hello! I'm Arezoo Ghorbanzade, an engineer and backend developer with expertise in Go, Node.js, and Python.<br>
-                    I specialize in building efficient, scalable backend solutions.</p>
-                <a href="about/about-details.html">Read more...</a>
-            </div>
-        </section>
-        
-        <section id="projects" class="section">
-            <h2>My Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h4>Intrusion Detection System</h4>
-                    <p>A Python-based system for detecting cyberattacks with ML integration.</p>
-                    <a href="projects/project-details.html" target="_blank">View Detail</a>
+
+    <main class="flex-1 w-full pb-20">
+        <section id="about" class="bg-gray-600 py-16 text-center mx-auto px-4 max-w-6xl shadow-lg rounded-lg mt-10">
+            <h2 class="text-3xl font-semibold max-w-4xl text-purple-400">About Me</h2>
+            <div class="bg-gray-800 flex flex-col md:flex-row justify-center items-center mt-8 gap-8 rounded-lg"> <!-- اضافه کردن rounded-lg -->
+                <img src="images/profile.jpg" alt="My Profile Picture" class="rounded-full w-40 h-40 object-cover shadow-lg">
+                <div class="text-left max-w-2xl">
+                    <p class="text-lg text-white mb-4">Hello! I'm Arezoo Ghorbanzade, an engineer and backend developer with expertise in Go, Node.js, and Python. I specialize in building efficient, scalable backend solutions.</p>
+                    <a href="about/about-details.html" class="text-purple-400 font-semibold hover:underline">Read more...</a>
                 </div>
             </div>
         </section>
         
-        
-        <section id="contact" class="section contact-section">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me via any of the following platforms:</p>
-            <div class="social-icons">
-                <a href="https://wa.me/989300693294" target="_blank" class="contact-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="#25D366">
-                        <path
-                            d="M16.01 0C7.168 0 .01 7.158.01 15.999c0 2.826.738 5.568 2.136 7.995L0 32l8.292-2.124a15.97 15.97 0 007.717 1.952C24.85 31.828 32 24.67 32 15.999 32 7.158 24.852 0 16.01 0zm8.328 23.704c-.347.978-2.023 1.892-2.8 1.94-.717.043-1.686.364-5.811-1.707-4.887-2.399-7.99-8.403-8.242-8.798-.246-.397-1.959-3.29-1.866-6.284.087-2.868 1.647-4.263 2.234-4.82.516-.486 1.356-.398 1.892-.39.433.007.986.043 1.479.637.476.577 1.638 2.112 1.745 2.269.143.206.244.442.097.718-.12.222-.11.393-.218.604-.109.21-.21.335-.433.603s-.356.48-.535.724c-.173.238-.354.496-.177.889.174.394.768 1.269 1.648 2.508-.713-.724-.896-.828-.853-.853z" />
+        <section id="projects" class="bg-gray-600 py-16 text-center mx-auto px-4 max-w-6xl shadow-lg rounded-lg mt-10">
+            <h2 class="text-3xl font-semibold text-purple-400 mb-10">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <h4 class="text-xl font-bold text-white mb-4">Intrusion Detection System</h4>
+                    <p class="text-white mb-4">A Python-based system for detecting cyberattacks with ML integration.</p>
+                    <a href="projects/project-details.html" target="_blank" class="text-purple-400 font-semibold hover:underline">View Detail</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-600 py-16 text-center mx-auto px-4 max-w-6xl shadow-lg rounded-lg mt-10">
+            <h2 class="text-3xl font-semibold text-purple-400 mb-8">Contact Me</h2>
+            <p class="text-lg text-white mb-6">Feel free to reach out to me via any of the following platforms:</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://wa.me/989300693294" target="_blank" class="text-2xl text-green-500 hover:text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+                        <path d="M16.01 0C7.168 0 .01 7.158.01 15.999c0 2.826.738 5.568 2.136 7.995L0 32l8.292-2.124a15.97 15.97 0 007.717 1.952C24.85 31.828 32 24.67 32 15.999 32 7.158 24.852 0 16.01 0zm8.328 23.704c-.347.978-2.023 1.892-2.8 1.94-.717.043-1.686.364-5.811-1.707-4.887-2.399-7.99-8.403-8.242-8.798-.246-.397-1.959-3.29-1.866-6.284.087-2.868 1.647-4.263 2.234-4.82.516-.486 1.356-.398 1.892-.39.433.007.986.043 1.479.637.476.577 1.638 2.112 1.745 2.269.143.206.244.442.097.718-.12.222-.11.393-.218.604-.109.21-.21.335-.433.603s-.356.48-.535.724c-.173.238-.354.496-.177.889.174.394.768 1.269 1.648 2.508-.713-.724-.896-.828-.853-.853z" />
                     </svg>
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arezoo.ghorbanzadeh@gmail.com" target="_blank" class="contact-link">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ghorbanzadeharezoo@gmail.com" target="_blank" class="text-2xl text-red-600 hover:text-red-700">
                     <i class="fas fa-envelope"></i>
-                </a>               
-                <a href="https://t.me/arezooq33" target="_blank" class="contact-link">
+                </a>
+                <a href="https://t.me/arezoo_ghorbanzade" target="_blank" class="text-2xl text-blue-500 hover:text-blue-600">
                     <i class="fab fa-telegram-plane"></i>
                 </a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Made with 💻 by <a href="https://github.com/arezooq/arezooq.github.io/">Arezoo Ghorbanzade</a></p>
+
+    <footer class="w-full bg-gray-800 text-white text-center flex flex-col items-center justify-center gap-1 py-3">
+        <p>Designed and Developed by 
+            <span class="text-purple-400">
+                <a href="https://github.com/arezooq/arezooq.github.io/" target="_blank" class="hover:underline">
+                    Arezoo Ghorbanzade
+                </a>
+            </span>
+        </p>
+        <p>Copyright © 2025</p>
     </footer>
+
 </body>
 
 </html>
